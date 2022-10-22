@@ -5,12 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+    body{ 
+        height: 600px;
+        width: 1000px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .header_flex {
+        height: 60px;
+        display: flex;
+        background-color: #E0E0E0;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .main_f{
+        display: flex;
+    }
+
+    .main_flex{
+        height: 300px;
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        background-color: #FFF8E3;
+        justify-content: flex-end;
+    }
+
+    .aside_flex{
+        height: 300px;
+        display: flex;
+        width: 40%;
+        background-color: #DDECCB;
+    }
+
+    .aside_t{
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer_flex{
+        height: 130px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #E0E0E0;
+}
+
+    .foot_flex{
+        display: flex;
+        background-color: #FAFAFA;
+        width: 200px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_div{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main_s{
+        background-color: #FEEAB9;
+        width: 46%;
+        height: 65px;
+    }
+
+    .main_ss{
+        background-color: #FEEAB9;
+        width: 96%;
+        height: 65px;
+        align-self: flex-end;
+    }
+
+    .main_sec{
+        display: flex;
+        justify-content: center;
+    }
+
+    .main_d{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFF8E3;
+        justify-content:space-around;
+        height: 150px;
+    }
+    .header_f{
+        height: 100%;
+        width: 100%;
+    }
+</style>
 </head>
 
 <body>
-    <h1>
-        привет
-    </h1>
-    
+    <header class="header_flex">
+        <h4>[Шапка страницы]</h4>
+    </header>
+    <main class="main_f">
+        <div class="main_flex">[Основная часть]
+            <div class="main_d">
+                <div class="main_div">
+                    <section class="main_s">
+                        <h4>[Еще 1]</h4>
+                    </section>
+                    <section class="main_s">
+                        <h4>[Еще 2]</h4>
+                    </section>
+                </div>
+                <div class="main_sec">
+                    <section class="main_ss">
+                        <h4>[Еще 3]</h4>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <aside class="aside_flex">
+            <div class="aside_t">[Боковая область]
+            </div> 
+        </aside>
+    </main>
+    <footer class="footer_flex">
+        <section class="foot_flex">
+            <h4>[Секция футера 1]</h4>
+        </section>
+        <section class="foot_flex">
+            <h4>[Секция футера 2]</h4>
+        </section>
+        <section class="foot_flex">
+            <h4>[Секция футера 3]</h4>
+        </section>
+        <section class="foot_flex">
+            <h4>[Секция футера 4]</h4>
+        </section>
+    </footer>
 </body>
 </html>
